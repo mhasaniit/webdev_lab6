@@ -1,5 +1,6 @@
 body {
-  background-image: url("/images/black.jpg");
+  background-image: url("../images/black.jpg");
+  position: relative;
 }
 
 #page-wrapper {
@@ -13,15 +14,18 @@ body {
   position: relative;
   margin-top: 40px;
   border-radius: 12px 12px 0px 0px; 
+  background: #111;
+  height: 120px;
 }
 
 #header h1 {
   position: absolute;
   left: 420px;
-  top:5px;
+  top: 5px;
   font-size: 3em;
   font-family: 'Devonshire', cursive;
   color: #E35335;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 #header a#logo1 img {
@@ -30,37 +34,44 @@ body {
   margin-bottom: 20px;
 }
 
-#header #toplink {
-  text-decoration: none;
-  position: absolute;
-  top:-34px;
-  right: 10px;
-  color: white;
-  font-size: 1.8em;
-}
-
 #footer {
   background-color: #777;
   height: 80px;
   clear: both;
+  text-align: center;
+  padding-top: 20px;
 }
 
 #content-wrapper {
-  background-image: url("/images/repeating.png");
-  float: left;
+  background-image: url("../images/repeating.png");
+  overflow: hidden;
+  width: 960px;
 }
 
 #main-content {
   min-height: 300px;
   width: 715px;
-  margin-right: 30px;
+  margin-right: 0;
   float: left;
   margin-left: 15px;
+  margin-top: 15px;
+}
+
+#side-content {
+  min-height: 150px;
+  width: 200px;
+  float: right;
+  background: #FF8C00;
+  margin-right: 15px;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
 }
 
 h2 strong {
   font-size: 2em;
   font-weight: 900;
+  color: #333;
 }
 
 .image-r {
@@ -70,18 +81,14 @@ h2 strong {
   padding: 5px;
   background-color: white;
   margin: 10px 0 10px 20px;
-}
-
-#side-content {
-  min-height: 150px;
-  width: 200px;
-  float: left;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
 }
 
 #main-nav {
   float: left;
-  width: 100%;
+  width: 960px;
   background-color: #333;
+  margin-left: 0;
 }
 
 #main-nav ul {
@@ -90,7 +97,7 @@ h2 strong {
   padding: 0;
   float: left;
   position: relative;
-  left:50%;
+  left: 50%;
 }
 
 #main-nav ul li {
@@ -114,9 +121,33 @@ h2 strong {
 #center {
   width: 960px;
   text-align: center;
+  margin: 20px 0;
+  clear: both;
+}
+
+#bul1, #bul2 {
+  margin: 15px 0;
 }
 
 strong {
   font-weight: 900;
-  font-size: 48px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 20px,
+      rgba(255,140,0,0.15) 20px,
+      rgba(255,140,0,0.15) 40px
+    );
+  pointer-events: none;
+  z-index: -1;
 }
