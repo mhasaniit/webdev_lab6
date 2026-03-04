@@ -73,39 +73,28 @@ body {
 }
 
 #side-content {
-  width: 220px;
-  float: right;
-  margin: 15px 15px 15px 0;
+  background: transparent !important;
+  border: none !important;
   padding: 10px;
-  background: white;  /* NOT ORANGE */
-  border: 1px solid #ccc;
-}
-
-.image-r {
-  float: right;
-  border: 2px solid blue;
-  width: 300px;
-  padding: 5px;
-  background: white;
-  margin: 10px;
 }
 
 #center {
   clear: both;
-  width: 960px;
   text-align: center;
-  margin: 20px auto;
-  float: right;  /* Lower right positioning */
-  clear: right;
+  width: 100%;
+  margin: 40px auto 20px auto;  /* Extra top space = "lower" */
+  float: none !important;
 }
 
-#footer {
-  background-color: #777;
-  height: 80px;
-  clear: both;
-  text-align: center;
+#center iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+#footer p {
+  text-align: left !important;
+  margin-left: 20px;
   padding-top: 30px;
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 14px;
 }
