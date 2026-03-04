@@ -6,6 +6,7 @@ body {
   margin: 0 auto;
   box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
   border-radius: 12px 12px 0px 0px;
+  background-color: white;
 }
 #header {
   position: relative;
@@ -21,17 +22,7 @@ body {
   color: #E35335;
 }
 #header a#logo1 img {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-#header #toplink {
-  text-decoration: none;
-  position: absolute;
-  top: -34px;
-  right: 10px;
-  color: white;
-  font-size: 1.8em;
+  margin: 20px;
 }
 #main-nav {
   float: left;
@@ -85,16 +76,23 @@ body {
   background-color: white;
   margin: 10px 0 10px 20px;
 }
-#footer {
-  background-color: #777;
-  height: 80px;
-  clear: both;
-}
 h2 strong {
   font-size: 2em;
   font-weight: 900;
 }
 strong {
-  font-size: 2em;
   font-weight: 900;
+  font-size: 48px;
+}
+#center {
+  text-align: center;
+  margin-top: 20px;
+}
+#footer {
+  background-color: #777;
+  height: 80px;
+  clear: both;
+  text-align: center;
+  padding-top: 25px;
+  color: white;
 }
