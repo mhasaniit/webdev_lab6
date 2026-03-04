@@ -1,21 +1,21 @@
 body {
   background-image: url("../images/black.jpg");
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 #page-wrapper {
   width: 960px;
   margin: 0 auto;
-  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1); 
-  border-radius: 12px 12px 0px 0px; 
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1);
+  border-radius: 12px 12px 0px 0px;
 }
 
 #header {
   position: relative;
-  margin-top: 40px;
-  border-radius: 12px 12px 0px 0px; 
   background: #111;
   height: 120px;
+  border-radius: 12px 12px 0px 0px;
 }
 
 #header h1 {
@@ -28,48 +28,16 @@ body {
 }
 
 #header a#logo1 img {
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-#content-wrapper {
-  background-image: url("../images/repeating.png");
-  overflow: hidden;
-  width: 960px;
-}
-
-#main-content {
-  width: 715px;
-  float: left;
-  margin-left: 15px;
-  margin-top: 15px;
-}
-
-#side-content {
-  width: 200px;
-  float: right;
-  background: #FF8C00;
-  margin-right: 15px;
-  padding: 15px;
-  margin-top: 15px;
-}
-
-.image-r {
-  float: right;
-  border: 2px solid blue;
-  width: 300px;
-  padding: 5px;
-  background-color: white;
-  margin: 10px 0 10px 20px;
+  margin: 20px;
 }
 
 #main-nav {
-  width: 960px;
   background-color: #333;
+  width: 960px;
 }
 
 #main-nav ul {
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -79,39 +47,65 @@ body {
 }
 
 #main-nav ul li a {
-  padding: 10px 25px;
   display: block;
-  text-decoration: none;
+  padding: 10px 25px;
   color: #ccc;
+  text-decoration: none;
 }
 
 #main-nav ul li a:hover {
-  background-color: #ccc;
+  background: #ccc;
   color: #333;
 }
-/* Center YouTube video */
-#center {
-  clear: both;
-  text-align: center;
-  margin: 20px 0;
-  width: 100%;
+
+#content-wrapper {
+  width: 960px;
+  overflow: hidden;
+  background: url("../images/repeating.png");
+  padding-bottom: 80px;
 }
 
-#center iframe {
-  display: block;
-  margin: 0 auto;
+#main-content {
+  width: 650px;
+  float: left;
+  margin: 15px;
+  margin-right: 0;
 }
 
 #side-content {
-  float: left !important;    /* LEFT instead of right */
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 220px;
+  float: right;
+  margin: 15px 15px 15px 0;
+  padding: 10px;
+  background: white;  /* NOT ORANGE */
+  border: 1px solid #ccc;
 }
+
+.image-r {
+  float: right;
+  border: 2px solid blue;
+  width: 300px;
+  padding: 5px;
+  background: white;
+  margin: 10px;
+}
+
+#center {
+  clear: both;
+  width: 960px;
+  text-align: center;
+  margin: 20px auto;
+  float: right;  /* Lower right positioning */
+  clear: right;
+}
+
 #footer {
-  background-color: #777 !important;
+  background-color: #777;
   height: 80px;
   clear: both;
   text-align: center;
   padding-top: 30px;
-  margin-top: 20px;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
